@@ -21,7 +21,7 @@ uneval <- function(x) {
   env <- parent.frame()
 
   if (!is_promise2(name, env)) {
-    stop(name, "is not a promise", call. = FALSE)
+    stop(name, " is not a promise", call. = FALSE)
   }
 
   .Call("promise_code", name, env)
